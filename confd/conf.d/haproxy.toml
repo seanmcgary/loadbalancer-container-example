@@ -1,0 +1,8 @@
+[template]
+src = "haproxy.cfg.tmpl"
+dest = "/etc/haproxy/haproxy.cfg"
+keys = [
+	"/apps/webapp"
+
+]
+reload_cmd = "echo restarting && /usr/bin/systemctl reload haproxy"
